@@ -1,5 +1,8 @@
-import {addNums} from "./add.js"
-import {sub} from "./subtract.js"
+import {createAddCard} from "./add.js"
+import {createSubCard} from "./subtract.js"
 
-console.log('addNums :', addNums(20));
-console.log('sub :', sub(20));
+let subBtn = document.querySelector("#subIt");
+let addBtn = document.querySelector("#addIt");
+
+subBtn.addEventListener('click', createSubCard)
+addBtn.addEventListener('click', createAddCard)
